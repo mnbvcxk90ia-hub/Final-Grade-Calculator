@@ -12,98 +12,114 @@ function calculateGrade() {
         document.getElementById("examWeight").value
     );
 
+
     const result = document.getElementById("result");
     const requiredGrade = document.getElementById("requiredGrade");
     const resultMessage = document.getElementById("resultMessage");
     const error = document.getElementById("error");
 
 
-    // Reset previous messages
-
     error.textContent = "";
+
     result.style.display = "none";
+
     requiredGrade.textContent = "";
+
     resultMessage.textContent = "";
 
 
-    // Validate empty fields
+    /* Check empty fields */
 
     if (
         isNaN(currentGrade) ||
         isNaN(desiredGrade) ||
         isNaN(examWeight)
     ) {
-        error.textContent = "Please enter all three values.";
+
+        error.textContent =
+            "Please enter all three values.";
+
         return;
     }
 
 
-    // Validate current grade
+    /* Validate current grade */
 
-    if (currentGrade < 0 || currentGrade > 100) {
+    if (
+        currentGrade < 0 ||
+        currentGrade > 100
+    ) {
+
         error.textContent =
             "Current grade must be between 0% and 100%.";
+
         return;
     }
 
 
-    // Validate desired grade
+    /* Validate desired grade */
 
-    if (desiredGrade < 0 || desiredGrade > 100) {
+    if (
+        desiredGrade < 0 ||
+        desiredGrade > 100
+    ) {
+
         error.textContent =
             "Desired grade must be between 0% and 100%.";
+
         return;
     }
 
 
-    // Validate exam weight
+    /* Validate exam weight */
 
-    if (examWeight <= 0 || examWeight > 100) {
+    if (
+        examWeight <= 0 ||
+        examWeight > 100
+    ) {
+
         error.textContent =
             "Final exam weight must be greater than 0% and no more than 100%.";
+
         return;
     }
 
 
-    // Convert percentage to decimal
+    /* Convert percentage to decimal */
 
-    const examWeightDecimal = examWeight / 100;
+    const examWeightDecimal =
+        examWeight / 100;
 
 
-    /*
-        Formula:
-
-        Required Exam Grade =
-        (Desired Grade -
-        Current Grade × (1 - Exam Weight))
-        ÷ Exam Weight
-    */
+    /* Calculate required exam grade */
 
     const required =
         (
             desiredGrade -
-            currentGrade * (1 - examWeightDecimal)
-        ) / examWeightDecimal;
+            currentGrade *
+            (1 - examWeightDecimal)
+        ) /
+        examWeightDecimal;
 
 
-    // Maximum possible overall grade
-    // assuming the student scores 100% on the final.
+    /* Calculate maximum possible overall grade */
 
     const maximumPossibleGrade =
-        currentGrade * (1 - examWeightDecimal) +
-        100 * examWeightDecimal;
+        currentGrade *
+        (1 - examWeightDecimal) +
+        100 *
+        examWeightDecimal;
 
-
-    // Show result
 
     result.style.display = "block";
 
 
-    // Student already has enough points
+    /* Target already achieved */
 
     if (required <= 0) {
 
-        requiredGrade.textContent = "0% or less";
+        requiredGrade.textContent =
+            "0% or less";
 
         resultMessage.textContent =
             "You already have enough points to reach your desired grade.";
@@ -112,7 +128,7 @@ function calculateGrade() {
     }
 
 
-    // Required grade is achievable
+    /* Achievable target */
 
     if (required <= 100) {
 
@@ -126,27 +142,42 @@ function calculateGrade() {
     }
 
 
-    // Required grade is above 100%
+    /* Target above 100% */
 
     requiredGrade.textContent =
         `${required.toFixed(2)}%`;
 
     resultMessage.textContent =
         `This target is not achievable with the final exam alone. Your maximum possible overall grade is ${maximumPossibleGrade.toFixed(2)}%.`;
+
 }
 
+
+
+/* RESET CALCULATOR */
 
 function resetCalculator() {
 
     document.getElementById("currentGrade").value = "";
+
     document.getElementById("desiredGrade").value = "";
+
     document.getElementById("examWeight").value = "";
 
-    document.getElementById("result").style.display = "none";
 
-    document.getElementById("requiredGrade").textContent = "";
+    document.getElementById("result").style.display =
+        "none";
 
-    document.getElementById("resultMessage").textContent = "";
 
-    document.getElementById("error").textContent = "";
+    document.getElementById("requiredGrade").textContent =
+        "";
+
+
+    document.getElementById("resultMessage").textContent =
+        "";
+
+
+    document.getElementById("error").textContent =
+        "";
+
 }
