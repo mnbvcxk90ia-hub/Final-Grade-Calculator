@@ -6,18 +6,39 @@
 
     <title>Final Grade Calculator - Calculate Your Required Exam Grade</title>
 
-    <meta name="description" content="Use our free Final Grade Calculator to find out what score you need on your final exam to reach your desired course grade.">
+    <meta
+        name="description"
+        content="Use our free Final Grade Calculator to find out what score you need on your final exam to reach your desired course grade."
+    >
+
     <meta name="robots" content="index, follow">
 
-    <link rel="canonical" href="https://final-grade-calculator.generatornamechina.com/">
+    <link
+        rel="canonical"
+        href="https://final-grade-calculator.generatornamechina.com/"
+    >
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Final Grade Calculator">
-    <meta property="og:description" content="Calculate the grade you need on your final exam to reach your desired overall grade.">
-    <meta property="og:url" content="https://final-grade-calculator.generatornamechina.com/">
+
+    <meta
+        property="og:title"
+        content="Final Grade Calculator"
+    >
+
+    <meta
+        property="og:description"
+        content="Calculate the grade you need on your final exam to reach your desired overall grade."
+    >
+
+    <meta
+        property="og:url"
+        content="https://final-grade-calculator.generatornamechina.com/"
+    >
 
     <link rel="stylesheet" href="style.css">
 
+
+    <!-- WebApplication Schema -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -26,7 +47,7 @@
         "description": "A free online calculator that determines the exam grade needed to achieve a desired final course grade.",
         "applicationCategory": "EducationalApplication",
         "operatingSystem": "Any",
-        "url": "https://final-grade-calculator.generatornamechina.com/"
+        "url": "https://final-grade-calculator.generatornamechina.com/",
         "offers": {
             "@type": "Offer",
             "price": "0",
@@ -35,6 +56,8 @@
     }
     </script>
 
+
+    <!-- FAQ Schema -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -67,14 +90,20 @@
         ]
     }
     </script>
+
 </head>
+
 
 <body>
 
+
 <header class="site-header">
+
     <div class="container header-inner">
 
-        <a href="/" class="logo">Final Grade Calculator</a>
+        <a href="/" class="logo">
+            Final Grade Calculator
+        </a>
 
         <nav>
             <a href="#calculator">Calculator</a>
@@ -83,17 +112,27 @@
         </nav>
 
     </div>
+
 </header>
+
 
 
 <main>
 
+
+<!-- HERO SECTION -->
+
 <section class="hero">
+
     <div class="container">
 
-        <span class="badge">Free Student Calculator</span>
+        <span class="badge">
+            Free Student Calculator
+        </span>
 
-        <h1>Final Grade Calculator</h1>
+        <h1>
+            Final Grade Calculator
+        </h1>
 
         <p>
             Find out exactly what grade you need on your final exam
@@ -105,8 +144,12 @@
         </a>
 
     </div>
+
 </section>
 
+
+
+<!-- CALCULATOR SECTION -->
 
 <section id="calculator" class="calculator-section">
 
@@ -114,15 +157,21 @@
 
         <div class="calculator-card">
 
-            <h2>What Grade Do I Need on My Final?</h2>
+            <h2>
+                What Grade Do I Need on My Final?
+            </h2>
 
             <p class="calculator-description">
                 Enter your current grade, desired grade, and final exam
                 weight to calculate the score you need.
             </p>
 
+
             <div class="form-group">
-                <label for="currentGrade">Current Grade (%)</label>
+
+                <label for="currentGrade">
+                    Current Grade (%)
+                </label>
 
                 <input
                     type="number"
@@ -132,25 +181,35 @@
                     max="100"
                     step="0.01"
                 >
+
             </div>
 
 
+
             <div class="form-group">
-                <label for="desiredGrade">Desired Final Grade (%)</label>
+
+                <label for="desiredGrade">
+                    Desired Final Grade (%)
+                </label>
 
                 <input
                     type="number"
                     id="desiredGrade"
-                    placeholder="Example: 90"
+                    placeholder="Example: 88"
                     min="0"
                     max="100"
                     step="0.01"
                 >
+
             </div>
 
 
+
             <div class="form-group">
-                <label for="examWeight">Final Exam Weight (%)</label>
+
+                <label for="examWeight">
+                    Final Exam Weight (%)
+                </label>
 
                 <input
                     type="number"
@@ -160,7 +219,9 @@
                     max="100"
                     step="0.01"
                 >
+
             </div>
+
 
 
             <div class="button-row">
@@ -173,6 +234,7 @@
                     Calculate Grade
                 </button>
 
+
                 <button
                     type="button"
                     class="reset-btn"
@@ -184,18 +246,34 @@
             </div>
 
 
-            <div id="error" class="error" role="alert"></div>
+
+            <div
+                id="error"
+                class="error"
+                role="alert"
+            ></div>
 
 
-            <div id="result" class="result" aria-live="polite">
+
+            <div
+                id="result"
+                class="result"
+                aria-live="polite"
+            >
 
                 <div class="result-label">
                     Required Final Exam Grade
                 </div>
 
-                <div id="requiredGrade" class="required-grade"></div>
+                <div
+                    id="requiredGrade"
+                    class="required-grade"
+                ></div>
 
-                <div id="resultMessage" class="result-message"></div>
+                <div
+                    id="resultMessage"
+                    class="result-message"
+                ></div>
 
             </div>
 
@@ -206,11 +284,19 @@
 </section>
 
 
-<section id="how-it-works" class="content-section">
+
+<!-- HOW IT WORKS -->
+
+<section
+    id="how-it-works"
+    class="content-section"
+>
 
     <div class="container content-container">
 
-        <h2>How Does the Final Grade Calculator Work?</h2>
+        <h2>
+            How Does the Final Grade Calculator Work?
+        </h2>
 
         <p>
             The Final Grade Calculator uses your current course grade,
@@ -218,24 +304,32 @@
             the score you need on your final exam.
         </p>
 
-        <h3>The Final Grade Formula</h3>
+
+        <h3>
+            The Final Grade Formula
+        </h3>
 
         <div class="formula">
+
             Required Exam Grade =
             (Desired Grade − Current Grade × (1 − Exam Weight))
             ÷ Exam Weight
+
         </div>
 
         <p>
-            The exam weight is converted from a percentage into a decimal
-            before the calculation is performed.
+            The exam weight is converted from a percentage into a
+            decimal before the calculation is performed.
         </p>
 
-        <h3>Example</h3>
+
+        <h3>
+            Example
+        </h3>
 
         <p>
-            Suppose your current grade is 85%, you want a 90% final grade,
-            and your final exam is worth 30% of the course.
+            Suppose your current grade is 85%, you want an 88% final
+            grade, and your final exam is worth 30% of the course.
         </p>
 
         <p>
@@ -243,9 +337,19 @@
         </p>
 
         <ul>
-            <li>Current Grade: 85%</li>
-            <li>Desired Grade: 90%</li>
-            <li>Final Exam Weight: 30%</li>
+
+            <li>
+                Current Grade: 85%
+            </li>
+
+            <li>
+                Desired Grade: 88%
+            </li>
+
+            <li>
+                Final Exam Weight: 30%
+            </li>
+
         </ul>
 
         <p>
@@ -253,7 +357,10 @@
             to reach your target.
         </p>
 
-        <h3>Can I Get a 100% on My Final Exam?</h3>
+
+        <h3>
+            Can I Get a 100% on My Final Exam?
+        </h3>
 
         <p>
             If the calculator shows a required grade above 100%, the
@@ -267,26 +374,42 @@
 </section>
 
 
-<section id="faq" class="content-section faq-section">
+
+<!-- FAQ -->
+
+<section
+    id="faq"
+    class="content-section faq-section"
+>
 
     <div class="container content-container">
 
-        <h2>Frequently Asked Questions</h2>
+        <h2>
+            Frequently Asked Questions
+        </h2>
 
 
         <div class="faq-item">
-            <h3>How do I calculate what grade I need on my final?</h3>
+
+            <h3>
+                How do I calculate what grade I need on my final?
+            </h3>
 
             <p>
                 Enter your current grade, desired final grade, and the
                 percentage of your course grade represented by the final
                 exam. The calculator will calculate your required exam score.
             </p>
+
         </div>
 
 
+
         <div class="faq-item">
-            <h3>What is the formula for calculating my required final grade?</h3>
+
+            <h3>
+                What is the formula for calculating my required final grade?
+            </h3>
 
             <p>
                 The formula is:
@@ -294,44 +417,65 @@
                 (Desired Grade − Current Grade × (1 − Exam Weight))
                 ÷ Exam Weight.
             </p>
+
         </div>
 
 
+
         <div class="faq-item">
-            <h3>What if I need more than 100% on my final?</h3>
+
+            <h3>
+                What if I need more than 100% on my final?
+            </h3>
 
             <p>
-                A required score above 100% means your desired overall grade
-                is not mathematically achievable through the final exam alone.
+                A required score above 100% means your desired overall
+                grade is not mathematically achievable through the final
+                exam alone.
             </p>
+
         </div>
 
 
+
         <div class="faq-item">
-            <h3>Can I use this calculator for college or high school?</h3>
+
+            <h3>
+                Can I use this calculator for college or high school?
+            </h3>
 
             <p>
                 Yes. The calculator can be used for most courses that use
                 percentage-based grades and a weighted final exam.
             </p>
+
         </div>
 
 
+
         <div class="faq-item">
-            <h3>Is this final grade calculator free?</h3>
+
+            <h3>
+                Is this final grade calculator free?
+            </h3>
 
             <p>
                 Yes. The calculator is free to use and does not require
                 an account.
             </p>
+
         </div>
 
     </div>
 
 </section>
 
+
 </main>
 
+
+
+<!-- FOOTER -->
 
 <footer class="site-footer">
 
@@ -350,7 +494,9 @@
 </footer>
 
 
+
 <script src="script.js"></script>
 
 </body>
+
 </html>
