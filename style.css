@@ -1,0 +1,410 @@
+/* =========================
+   Global Styles
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8fafc;
+    color: #172033;
+    line-height: 1.6;
+}
+
+.container {
+    width: min(1100px, 92%);
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+.header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.header .container {
+    min-height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 800;
+    color: #111827;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #64748b;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+
+/* =========================
+   Hero
+========================= */
+
+.hero {
+    background: #ffffff;
+    text-align: center;
+
+    padding: 80px 20px 70px;
+}
+
+.small-title {
+    color: #2563eb;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 6vw, 64px);
+    line-height: 1.1;
+
+    color: #111827;
+
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    max-width: 650px;
+
+    margin: auto;
+
+    color: #64748b;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   Calculator Section
+========================= */
+
+.calculator-section {
+    padding: 60px 0;
+}
+
+.calculator-card {
+    max-width: 650px;
+
+    margin: auto;
+
+    background: #ffffff;
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow: 0 10px 35px rgba(15, 23, 42, 0.08);
+}
+
+.calculator-card h2 {
+    font-size: 28px;
+
+    margin-bottom: 8px;
+
+    color: #111827;
+}
+
+.description {
+    color: #64748b;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   Inputs
+========================= */
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+
+    font-weight: 700;
+
+    margin-bottom: 7px;
+
+    color: #334155;
+}
+
+.input-group input {
+    width: 100%;
+
+    padding: 14px 15px;
+
+    font-size: 16px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+.input-group input:focus {
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+/* =========================
+   Buttons
+========================= */
+
+button {
+    width: 100%;
+
+    padding: 14px 20px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #2563eb;
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.reset-button {
+    margin-top: 10px;
+
+    background: #e2e8f0;
+
+    color: #172033;
+}
+
+.reset-button:hover {
+    background: #cbd5e1;
+}
+
+
+/* =========================
+   Result
+========================= */
+
+.result {
+    display: none;
+
+    margin-top: 30px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    background: #eff6ff;
+
+    border: 1px solid #bfdbfe;
+
+    border-radius: 14px;
+}
+
+.result p {
+    color: #64748b;
+
+    font-weight: 600;
+}
+
+.result h3 {
+    color: #2563eb;
+
+    font-size: 55px;
+
+    line-height: 1.1;
+
+    margin: 8px 0;
+}
+
+
+/* =========================
+   Error
+========================= */
+
+.error {
+    color: #dc2626;
+
+    font-weight: 600;
+
+    margin-top: 15px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   Content
+========================= */
+
+.content-section {
+    padding: 65px 0;
+
+    background: #ffffff;
+
+    border-top: 1px solid #e5e7eb;
+}
+
+.content {
+    max-width: 800px;
+}
+
+.content h2 {
+    font-size: 32px;
+
+    color: #111827;
+
+    margin-bottom: 20px;
+}
+
+.content h3 {
+    font-size: 21px;
+
+    color: #1e293b;
+
+    margin-top: 30px;
+
+    margin-bottom: 8px;
+}
+
+.content p {
+    color: #64748b;
+
+    margin-bottom: 15px;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    background: #0f172a;
+
+    color: #cbd5e1;
+
+    padding: 30px 0;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 700px) {
+
+    .header .container {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 18px 0;
+    }
+
+    nav {
+        width: 100%;
+
+        justify-content: center;
+
+        gap: 18px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 60px 15px 50px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .calculator-section {
+        padding: 40px 0;
+    }
+
+    .calculator-card {
+        padding: 25px 20px;
+    }
+
+    .calculator-card h2 {
+        font-size: 24px;
+    }
+
+    .result h3 {
+        font-size: 45px;
+    }
+
+    .content-section {
+        padding: 45px 0;
+    }
+
+    .content h2 {
+        font-size: 27px;
+    }
+}
