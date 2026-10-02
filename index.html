@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Final Grade Calculator - Calculate Your Required Exam Grade</title>
+
+    <meta
+        name="description"
+        content="Use our free Final Grade Calculator to find out what grade you need on your final exam to reach your desired course grade."
+    >
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">Final Grade Calculator</a>
+
+            <nav>
+                <a href="#calculator">Calculator</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="container">
+
+            <p class="small-title">FREE STUDENT CALCULATOR</p>
+
+            <h1>Final Grade Calculator</h1>
+
+            <p class="hero-description">
+                Calculate the grade you need on your final exam
+                to achieve your desired course grade.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Calculator -->
+    <section id="calculator" class="calculator-section">
+
+        <div class="container">
+
+            <div class="calculator-card">
+
+                <h2>Calculate Your Final Grade</h2>
+
+                <p class="description">
+                    Enter your current grade, desired final grade,
+                    and final exam weight.
+                </p>
+
+
+                <div class="input-group">
+
+                    <label for="currentGrade">
+                        Current Grade (%)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="currentGrade"
+                        placeholder="Example: 85"
+                        min="0"
+                        max="100"
+                        step="0.01"
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="desiredGrade">
+                        Desired Final Grade (%)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="desiredGrade"
+                        placeholder="Example: 90"
+                        min="0"
+                        max="100"
+                        step="0.01"
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="examWeight">
+                        Final Exam Weight (%)
+                    </label>
+
+                    <input
+                        type="number"
+                        id="examWeight"
+                        placeholder="Example: 30"
+                        min="1"
+                        max="100"
+                        step="0.01"
+                    >
+
+                </div>
+
+
+                <button onclick="calculateGrade()">
+                    Calculate Required Grade
+                </button>
+
+
+                <button
+                    class="reset-button"
+                    onclick="resetCalculator()"
+                >
+                    Reset
+                </button>
+
+
+                <!-- Result -->
+                <div id="result" class="result">
+
+                    <p>You need</p>
+
+                    <h3 id="requiredGrade">--%</h3>
+
+                    <p>
+                        on your final exam to reach your desired grade.
+                    </p>
+
+                </div>
+
+
+                <p id="error" class="error"></p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="content-section">
+
+        <div class="container content">
+
+            <h2>How Does the Final Grade Calculator Work?</h2>
+
+            <p>
+                Our Final Grade Calculator helps students determine
+                what score they need on their final exam to achieve
+                their desired overall course grade.
+            </p>
+
+
+            <h3>1. Enter Your Current Grade</h3>
+
+            <p>
+                Enter the grade you currently have in your course
+                before taking the final exam.
+            </p>
+
+
+            <h3>2. Enter Your Desired Grade</h3>
+
+            <p>
+                Enter the overall course grade you want to achieve.
+            </p>
+
+
+            <h3>3. Enter the Final Exam Weight</h3>
+
+            <p>
+                Enter the percentage of your course grade that comes
+                from the final exam.
+            </p>
+
+
+            <h3>4. Calculate</h3>
+
+            <p>
+                The calculator will show the exact percentage you need
+                to score on your final exam.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FAQ -->
+    <section id="faq" class="content-section">
+
+        <div class="container content">
+
+            <h2>Frequently Asked Questions</h2>
+
+
+            <h3>What is a Final Grade Calculator?</h3>
+
+            <p>
+                A Final Grade Calculator calculates the exam score
+                required to reach a desired overall course grade.
+            </p>
+
+
+            <h3>What if I need more than 100%?</h3>
+
+            <p>
+                If the required grade is above 100%, your desired
+                final course grade cannot be reached with the
+                current grades and exam weight you entered.
+            </p>
+
+
+            <h3>Is this Final Grade Calculator free?</h3>
+
+            <p>
+                Yes. The calculator is completely free to use.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="container">
+
+            <p>
+                © 2026 Final Grade Calculator
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
